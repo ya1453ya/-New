@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>富國島旅遊指南｜PHU QUOC TRAVEL GUIDE</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    background: #f8f5ef;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #0d4b4b, #126b68);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0 0 15px;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+nav {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #126b68;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+.title {
+    text-align: center;
+    color: #b18a42;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #126b68;
+    font-size: 24px;
+}
+
+.card p {
+    line-height: 1.8;
+}
+
+.section {
+    margin-top: 70px;
+}
+
+.info {
+    background: white;
+    border-left: 5px solid #b18a42;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.info h3 {
+    margin-top: 0;
+    color: #126b68;
+}
+
+footer {
+    background: #0d4b4b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌴 富國島旅遊指南</h1>
+    <p>PHU QUOC TRAVEL GUIDE</p>
+</header>
+
+<nav>
+    <a href="#north">北部</a>
+    <a href="#central">中部</a>
+    <a href="#south">南部</a>
+    <a href="#food">美食</a>
+    <a href="#hotel">住宿</a>
+    <a href="#spa">SPA</a>
+</nav>
+
+<div class="container">
+
+    <section>
+        <h2 class="title">🌊 探索富國島</h2>
+
+        <p class="intro">
+            歡迎來到富國島旅遊指南！<br>
+            一起探索越南最美麗的海島，享受陽光、海灘、美食與精彩景點。
+        </p>
+
+        <div class="cards">
+
+            <div class="card" id="north">
+                <div class="icon">🦒</div>
+                <h3>北部</h3>
+                <p>
+                    珍珠野生動物園<br>
+                    富國大世界<br>
+                    珍珠奇幻樂園<br>
+                    香港軒・百佳
+                </p>
+            </div>
+
+            <div class="card" id="central">
+                <div class="icon">🌃</div>
+                <h3>中部</h3>
+                <p>
+                    陽東夜市<br>
+                    The Home Pizza<br>
+                    Chuồn Chuồn Bistro & Bar
+                </p>
+            </div>
+
+            <div class="card" id="south">
+                <div class="icon">🌅</div>
+                <h3>南部</h3>
+                <p>
+                    跨海纜車<br>
+                    日落小鎮<br>
+                    海洋之吻<br>
+                    Sun Bavaria GastroPub
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section" id="food">
+        <h2 class="title">🍽️ 富國島美食</h2>
+
+        <div class="info">
+            <h3>香港軒</h3>
+            <p>
+                港式料理推薦，提供北京烤鴨、燒臘拼盤、
+                瑤柱海皇炒飯及港式點心。
+            </p>
+        </div>
+
+        <div class="info">
+            <h3>The Home Pizza</h3>
+            <p>
+                手工窯烤披薩，結合義大利料理與富國島當地食材。
+            </p>
+        </div>
+
+        <div class="info">
+            <h3>陽東夜市</h3>
+            <p>
+                富國島熱門夜市，可以品嚐海鮮、越南小吃、
+                椰子冰淇淋與越式法國麵包。
+            </p>
+        </div>
+    </section>
+
+
+    <section class="section" id="hotel">
+        <h2 class="title">🏨 飯店推薦</h2>
+
+        <div class="info">
+            <h3>富國星灣皇冠假日飯店</h3>
+            <p>
+                Phu Quoc Star Bay Crowne Plaza<br>
+                提供多種客房、海景房及套房選擇。
+            </p>
+        </div>
+    </section>
+
+
+    <section class="section" id="spa">
+        <h2 class="title">💆 SPA & 按摩</h2>
+
+        <div class="info">
+            <h3>Lá Spa</h3>
+            <p>
+                提供越式按摩及多種 SPA 服務，
+                適合旅途中放鬆休息。
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>🌴 PHU QUOC TRAVEL GUIDE</p>
+    <p>富國島旅遊指南</p>
+</footer>
+
+</body>
+</html>
