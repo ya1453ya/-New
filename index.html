@@ -16,7 +16,7 @@ body{font-family:"Microsoft JhengHei","Noto Sans TC",Arial,sans-serif;color:#173
 .hero-button,.hotel-button{display:inline-block;background:#b08a45;color:#fff;padding:15px 35px;border-radius:40px;text-decoration:none;font-weight:bold}.hero-button:hover{background:#8d6d35;transform:translateY(-3px)}
 .container{width:90%;max-width:1200px;margin:auto}.section{padding:90px 0}.section-title{text-align:center;margin-bottom:55px}.section-title small{color:#b08a45;font-weight:bold;letter-spacing:4px}.section-title h2{font-size:42px;margin-top:8px;color:#174d4e}.section-title p{max-width:650px;margin:15px auto 0;color:#667878}
 .region-grid,.destination-grid,.restaurant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.region-card{height:380px;border-radius:20px;overflow:hidden;position:relative;background-size:cover;background-position:center;display:flex;align-items:flex-end;transition:.4s}.region-card:hover{transform:translateY(-8px)}
+.region-card{height:380px;border-radius:20px;overflow:hidden;position:relative;background-size:cover;background-position:center;display:flex;align-items:flex-end;transition:.4s}.region-card:hover{transform:translateY(-8px)}.region-card{text-decoration:none}.region-card b{color:#e8c982}
 .region-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.78))}
 .region-content{position:relative;z-index:2;color:#fff;padding:30px}.region-content span{color:#e8c982;font-size:14px}.region-content h3{font-size:32px;margin:5px 0}.region-content p{font-size:15px}
 .casino-banner{grid-column:1/-1;margin-top:10px}.casino-link{display:block;text-decoration:none;background:linear-gradient(135deg,#174d4e,#236c68);color:#fff;padding:28px 30px;border-radius:18px;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.12);transition:.3s}.casino-link:hover{transform:translateY(-4px);background:linear-gradient(135deg,#123f40,#1e625f)}.casino-icon{font-size:34px}.casino-title{font-size:27px;font-weight:bold;letter-spacing:1px}.casino-sub{margin-top:5px;color:#e8c982;font-size:15px}.casino-desc{margin-top:8px;color:#d8e5e3;font-size:14px}
@@ -30,7 +30,13 @@ footer{background:#103d3e;color:#fff;padding:60px 20px 30px;text-align:center}.f
 @media(max-width:900px){.nav-links{display:none}.hero{min-height:650px}.region-grid,.destination-grid,.restaurant-grid{grid-template-columns:1fr 1fr}.feature-grid,.hotel-box{grid-template-columns:1fr}.hotel-grid{grid-template-columns:1fr}.info-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.hero{min-height:620px}.hero h1{font-size:45px}.hero p{font-size:17px}.section{padding:65px 0}.section-title h2{font-size:32px}.region-grid,.destination-grid,.restaurant-grid,.info-grid{grid-template-columns:1fr}.hotel-box{padding:25px}.hotel-image{min-height:280px}.feature-image{height:300px}}
 </style>
-</head>
+<style>
+.about-box{background:#fff;padding:30px;border-radius:18px;box-shadow:0 8px 28px rgba(0,0,0,.06);margin-bottom:25px}
+.season-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.season-card{background:#fff;padding:28px;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.06)}
+.season-label{color:#b08a45;font-weight:bold}.season-card h3{color:#174d4e;margin:7px 0}.season-card p{color:#667878}
+@media(max-width:600px){.season-grid{grid-template-columns:1fr}}
+</style></head>
 <body>
 
 <nav class="navbar">
@@ -53,6 +59,15 @@ footer{background:#103d3e;color:#fff;padding:60px 20px 30px;text-align:center}.f
   </div>
 </header>
 
+<section class="section" id="about-phuquoc">
+<div class="container">
+<div class="section-title"><small>ABOUT PHU QUOC</small><h2>富國島簡介</h2></div>
+<div class="about-box"><p>富國島是越南最大的島嶼，被譽為「越南馬爾地夫」，越南全境唯一享有獨特的免簽證待遇，島上擁有美麗的白沙灘、奢華度假村、世界最長跨海纜車與大型主題樂園，是近年超紅的海島度假勝地。</p></div>
+<div class="season-grid">
+<div class="season-card"><div class="season-label">乾季・最佳季節｜11月–4月</div><h3>晴朗、海水清澈</h3><p>氣溫約25°C–32°C；天氣晴朗、濕度低；海水清澈見底。適合浮潛、SUP、沙灘與夕陽行程。屬旅遊旺季，機票與頂級度假村房價較高，建議提早預訂。</p></div>
+<div class="season-card"><div class="season-label">雨季・淡季｜5月–10月</div><h3>高 CP 值首選</h3><p>氣溫約26°C–33°C；多陣雨或午後雷陣雨，7–9月常有連續暴雨。可安排珍珠樂園水族館、泰迪熊博物館或飯店 SPA 等室內備案，並保留行程彈性。</p></div>
+</div></div></section>
+
 <section class="section" id="regions">
 <div class="container">
   <div class="section-title">
@@ -62,15 +77,15 @@ footer{background:#103d3e;color:#fff;padding:60px 20px 30px;text-align:center}.f
   </div>
 
   <div class="region-grid">
-    <div class="region-card" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85')">
-      <div class="region-content"><span>NORTH PHU QUOC</span><h3>北部</h3><p>動物園、主題樂園、富國大世界與大型娛樂設施。</p></div>
-    </div>
-    <div class="region-card" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=85')">
-      <div class="region-content"><span>CENTRAL PHU QUOC</span><h3>中部</h3><p>夜市、美食、山景餐廳與富國島生活。</p></div>
-    </div>
-    <div class="region-card" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85')">
-      <div class="region-content"><span>SOUTH PHU QUOC</span><h3>南部</h3><p>跨海纜車、日落小鎮、海洋之吻與夕陽。</p></div>
-    </div>
+    <a class="region-card" href="north.html" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85')">
+      <div class="region-content"><span>NORTH PHU QUOC</span><h3>北部</h3><p>動物園、主題樂園、富國大世界與大型娛樂設施。<br><b>點擊進入北部 →</b></p></div>
+    </a>
+    <a class="region-card" href="central.html" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=85')">
+      <div class="region-content"><span>CENTRAL PHU QUOC</span><h3>中部</h3><p>夜市、美食、山景餐廳與富國島生活。<br><b>點擊進入中部 →</b></p></div>
+    </a>
+    <a class="region-card" href="south.html" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85')">
+      <div class="region-content"><span>SOUTH PHU QUOC</span><h3>南部</h3><p>跨海纜車、日落小鎮、海洋之吻與夕陽。<br><b>點擊進入南部 →</b></p></div>
+    </a>
 
     <div class="casino-banner">
       <a href="#casino-info" class="casino-link">

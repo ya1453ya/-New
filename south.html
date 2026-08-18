@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南部｜富國島旅遊指南</title>
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Microsoft JhengHei","Noto Sans TC",Arial,sans-serif;color:#173f42;background:#f8f6f0;line-height:1.7}
+.navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:16px 6%;box-shadow:0 3px 20px rgba(0,0,0,.08)}
+.logo{color:#b08a45;font-size:22px;font-weight:800;letter-spacing:2px}.logo span{display:block;color:#174d4e;font-size:11px;letter-spacing:3px}
+.nav-links{display:flex;gap:28px;list-style:none}.nav-links a{text-decoration:none;color:#244b4c;font-weight:600}.nav-links a:hover{color:#b08a45}
+.hero{min-height:720px;background:linear-gradient(rgba(8,54,58,.38),rgba(8,54,58,.55)),url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85");background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:120px 20px 80px}
+.hero-content{max-width:900px}.hero-small{font-size:18px;letter-spacing:6px;margin-bottom:15px}.hero h1{font-size:clamp(46px,8vw,88px);line-height:1.1;letter-spacing:5px;margin-bottom:25px}.hero p{font-size:21px;margin-bottom:35px}
+.hero-button,.hotel-button{display:inline-block;background:#b08a45;color:#fff;padding:15px 35px;border-radius:40px;text-decoration:none;font-weight:bold}.hero-button:hover{background:#8d6d35;transform:translateY(-3px)}
+.container{width:90%;max-width:1200px;margin:auto}.section{padding:90px 0}.section-title{text-align:center;margin-bottom:55px}.section-title small{color:#b08a45;font-weight:bold;letter-spacing:4px}.section-title h2{font-size:42px;margin-top:8px;color:#174d4e}.section-title p{max-width:650px;margin:15px auto 0;color:#667878}
+.region-grid,.destination-grid,.restaurant-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.region-card{height:380px;border-radius:20px;overflow:hidden;position:relative;background-size:cover;background-position:center;display:flex;align-items:flex-end;transition:.4s}.region-card:hover{transform:translateY(-8px)}.region-card{text-decoration:none}.region-card b{color:#e8c982}
+.region-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.78))}
+.region-content{position:relative;z-index:2;color:#fff;padding:30px}.region-content span{color:#e8c982;font-size:14px}.region-content h3{font-size:32px;margin:5px 0}.region-content p{font-size:15px}
+.casino-banner{grid-column:1/-1;margin-top:10px}.casino-link{display:block;text-decoration:none;background:linear-gradient(135deg,#174d4e,#236c68);color:#fff;padding:28px 30px;border-radius:18px;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.12);transition:.3s}.casino-link:hover{transform:translateY(-4px);background:linear-gradient(135deg,#123f40,#1e625f)}.casino-icon{font-size:34px}.casino-title{font-size:27px;font-weight:bold;letter-spacing:1px}.casino-sub{margin-top:5px;color:#e8c982;font-size:15px}.casino-desc{margin-top:8px;color:#d8e5e3;font-size:14px}
+.destination-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.08);transition:.35s}.destination-card:hover{transform:translateY(-7px)}.destination-image{height:230px;background-size:cover;background-position:center}.destination-content{padding:24px}.tag{display:inline-block;background:#eef5f2;color:#34706c;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:bold}.destination-content h3{font-size:24px;margin:12px 0 7px;color:#174d4e}.destination-content p{color:#687777;font-size:15px}.more{display:inline-block;margin-top:15px;color:#b08a45;font-weight:bold;text-decoration:none}
+.feature{background:#174d4e;color:#fff}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.feature-image{height:480px;border-radius:22px;background:url("https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=1200&q=85");background-size:cover;background-position:center}.feature-text small{color:#e8c982;letter-spacing:4px}.feature-text h2{font-size:43px;margin:12px 0 20px}.feature-text p{color:#d7e3e1;margin-bottom:20px}.feature-list{list-style:none}.feature-list li{margin:12px 0}.feature-list li:before{content:"✓";color:#e8c982;font-weight:bold;margin-right:10px}
+.restaurant-card{background:#fff;border-radius:18px;overflow:hidden;border-top:4px solid #b08a45;box-shadow:0 7px 25px rgba(0,0,0,.06);transition:.35s}.restaurant-card:hover{transform:translateY(-7px)}.restaurant-image{height:230px;background-size:cover;background-position:center}.restaurant-card-content{padding:26px 30px}.restaurant-card .number{color:#b08a45;font-size:14px;font-weight:bold}.restaurant-card h3{font-size:25px;margin:10px 0;color:#174d4e}.restaurant-card p{color:#667878}.restaurant-info{margin-top:18px;font-size:14px;color:#456565}
+.hotel{background:#f0eee6}.hotel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.hotel-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 35px rgba(0,0,0,.08);transition:.35s}.hotel-card:hover{transform:translateY(-7px)}.hotel-card-image{height:250px;background-size:cover;background-position:center}.hotel-card-content{padding:28px}.hotel-card-content small{color:#b08a45;font-weight:bold;letter-spacing:2px}.hotel-card-content h3{font-size:27px;color:#174d4e;margin:8px 0 3px}.hotel-card-content p{color:#718080}.hotel-details{margin-top:18px;font-size:14px;color:#456565;line-height:2}.hotel-button{display:inline-block;margin-top:22px;background:#174d4e;color:#fff;padding:11px 24px;border-radius:30px;text-decoration:none}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.info-card{background:#fff;padding:28px 20px;text-align:center;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.06)}.info-card .icon{font-size:38px}.info-card h3{margin:12px 0 5px;color:#174d4e}.info-card p{font-size:14px;color:#718080}
+.casino-info{background:#103d3e;color:#fff}.casino-info .section-title h2{color:#fff}.casino-info .section-title p{color:#d7e3e1}
+footer{background:#103d3e;color:#fff;padding:60px 20px 30px;text-align:center}.footer-logo{color:#e8c982;font-size:27px;font-weight:bold;letter-spacing:3px}footer p{margin-top:10px;color:#c9d8d6}.copyright{margin-top:35px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);font-size:13px}
+@media(max-width:900px){.nav-links{display:none}.hero{min-height:650px}.region-grid,.destination-grid,.restaurant-grid{grid-template-columns:1fr 1fr}.feature-grid,.hotel-box{grid-template-columns:1fr}.hotel-grid{grid-template-columns:1fr}.info-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.hero{min-height:620px}.hero h1{font-size:45px}.hero p{font-size:17px}.section{padding:65px 0}.section-title h2{font-size:32px}.region-grid,.destination-grid,.restaurant-grid,.info-grid{grid-template-columns:1fr}.hotel-box{padding:25px}.hotel-image{min-height:280px}.feature-image{height:300px}}
+
+.region-page-hero{padding:150px 20px 80px;background:linear-gradient(rgba(8,54,58,.55),rgba(8,54,58,.7)),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85');background-size:cover;background-position:center;color:#fff;text-align:center}
+.region-page-hero h1{font-size:clamp(42px,7vw,72px);margin-bottom:12px}
+.region-page-hero p{font-size:18px}
+.back-link{display:inline-block;margin-top:25px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.6);padding:10px 22px;border-radius:30px}
+.page-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+@media(max-width:900px){.page-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.page-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">PHU QUOC<span>TRAVEL GUIDE</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="north.html">北部</a></li>
+    <li><a href="central.html">中部</a></li>
+    <li><a href="south.html">南部</a></li>
+  </ul>
+</nav>
+
+<header class="region-page-hero">
+  <div class="hero-content">
+    <div class="hero-small">SOUTH PHU QUOC</div>
+    <h1>南部</h1>
+    <p>探索海洋之吻、親吻橋與跨海纜車，安排富國島南部精彩行程。</p>
+    <a class="back-link" href="index.html">← 返回首頁</a>
+  </div>
+</header>
+
+<section class="section">
+<div class="container">
+  <div class="section-title">
+    <small>SOUTH PHU QUOC</small>
+    <h2>南部熱門景點</h2>
+    <p>點擊後續可再加入營業時間、建議停留時間、飯店距離、地圖與更多旅遊資訊。</p>
+  </div>
+  <div class="page-grid">
+    <div class="destination-card">
+      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=85')"></div>
+      <div class="destination-content">
+        <span class="tag">南部</span>
+        <h3>海洋之吻</h3>
+        <p>大型海上多媒體演出，結合海洋、燈光、音樂與影像。</p>
+        <div class="restaurant-info">📍 南部<br>⭐ 夜間行程</div>
+      </div>
+    </div>
+    <div class="destination-card">
+      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85')"></div>
+      <div class="destination-content">
+        <span class="tag">南部</span>
+        <h3>親吻橋</h3>
+        <p>富國島南部代表性地標，適合欣賞海景與夕陽。</p>
+        <div class="restaurant-info">📍 南部<br>⭐ 拍照打卡</div>
+      </div>
+    </div>
+    <div class="destination-card">
+      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85')"></div>
+      <div class="destination-content">
+        <span class="tag">南部</span>
+        <h3>太陽世界跨海纜車</h3>
+        <p>欣賞南部海景的經典體驗，連接日落小鎮與香島。</p>
+        <div class="restaurant-info">📍 南部<br>⭐ 白天行程</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="footer-logo">PHU QUOC</div>
+  <p>富國島旅遊指南</p>
+  <div class="copyright">© 2026 PHU QUOC TRAVEL GUIDE</div>
+</footer>
+</body>
+</html>
