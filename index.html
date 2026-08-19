@@ -30,6 +30,22 @@ a{color:inherit}
 footer{background:var(--navy-deep);color:#d9dfe5;text-align:center;padding:50px 20px;border-top:1px solid #b8893d66}.foot{font-family:Georgia,serif;color:#e4c47b;font-size:27px;letter-spacing:4px}
 @media(max-width:900px){.nav-links{gap:12px;font-size:13px}.region-grid,.destination-grid,.restaurant-grid,.hotel-grid{grid-template-columns:1fr 1fr}.feature-grid{grid-template-columns:1fr}.hero h1{font-size:52px}}
 @media(max-width:600px){.navbar{height:68px}.nav-links{display:none}.hero{min-height:500px;padding-top:120px}.hero h1{font-size:44px;letter-spacing:4px}.section{padding:60px 0}.region-grid,.destination-grid,.restaurant-grid,.hotel-grid,.info-grid{grid-template-columns:1fr}.casino-link{flex-wrap:wrap}.casino-desc{margin-left:0;width:100%}}
+
+/* FINAL LUXURY HOMEPAGE OVERRIDES */
+body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-serif;background:#f7f2e8;color:#183047}
+.hero{background-image:linear-gradient(90deg,rgba(4,19,33,.18),rgba(4,19,33,.08)),url('hero-bright.jpg');background-position:center;background-size:cover}
+.hero h1{font-family:"Noto Serif TC","Songti TC","Microsoft JhengHei",serif}
+.promo-section{padding-top:30px;padding-bottom:75px}
+.promo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.promo-card{display:block;text-decoration:none;color:#fff;background:#071b2c;border:1px solid #c79b52;border-radius:18px;overflow:hidden;box-shadow:0 14px 32px rgba(7,27,44,.18);transition:.25s}
+.promo-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(7,27,44,.25)}
+.promo-image{height:190px;background-position:center;background-size:cover}
+.promo-body{padding:22px 24px 25px;text-align:center;background:linear-gradient(160deg,#0a2135,#071522)}
+.promo-en{font-size:12px;letter-spacing:2px;color:#d8b56b}
+.promo-body h3{font-family:"Noto Serif TC","Microsoft JhengHei",serif;font-size:28px;color:#f0d18e;margin:5px 0}
+.promo-body p{font-size:14px;color:#e1e6eb;margin:5px 0 14px}
+.promo-body span{display:inline-block;border:1px solid #d8b56b;border-radius:24px;padding:6px 22px;color:#f0d18e;font-weight:700}
+@media(max-width:850px){.promo-grid{grid-template-columns:1fr}.promo-image{height:220px}}
 </style>
 </head>
 <body>
@@ -54,162 +70,29 @@ footer{background:var(--navy-deep);color:#d9dfe5;text-align:center;padding:50px 
   </div>
 </header>
 
-<section class="section" id="regions">
-<div class="container">
-  <div class="section-title">
-    <small>EXPLORE PHU QUOC</small>
-    <h2>探索富國島</h2>
-    <p>從北部自然景觀，到中部城市與夜市，再到南部夕陽與海上體驗。</p>
-  </div>
 
-  <div class="region-grid">
-    <a class="region-card" href="north.html" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85')">
-      <div class="region-content"><span>NORTH PHU QUOC</span><h3>北部</h3><p>動物園、主題樂園、富國大世界與大型娛樂設施。<br><b>點擊進入北部 →</b></p></div>
-    </a>
-    <a class="region-card" href="central.html" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=85')">
-      <div class="region-content"><span>CENTRAL PHU QUOC</span><h3>中部</h3><p>夜市、美食、山景餐廳與富國島生活。<br><b>點擊進入中部 →</b></p></div>
-    </a>
-    <a class="region-card" href="south.html" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85')">
-      <div class="region-content"><span>SOUTH PHU QUOC</span><h3>南部</h3><p>跨海纜車、日落小鎮、海洋之吻與夕陽。<br><b>點擊進入南部 →</b></p></div>
-    </a>
-  </div>
-</div>
-</section>
-
-<section class="section feature-links" id="featured">
-<div class="container">
-  <div class="section-title">
-    <small>CURATED PICKS</small>
-    <h2>精選推薦</h2>
-    <p>從娛樂、美食到富國大世界，一次掌握北部熱門選項。</p>
-  </div>
-  <div class="destination-grid">
-    <a class="destination-card" href="corona.html" style="text-decoration:none;color:inherit">
-      <div class="destination-image" style="background-image:url("videoframe_54426.png")"></div>
-      <div class="destination-content"><span class="tag">娛樂</span><h3>Corona 賭場</h3><p>富國島北部大型綜合娛樂場所。</p><span class="more">點擊進入 →</span></div>
-    </a>
-    <a class="destination-card" href="corona-food.html" style="text-decoration:none;color:inherit">
-      <div class="destination-image" style="background-image:url("corona-food-center.png")"></div>
-      <div class="destination-content"><span class="tag">美食</span><h3>科羅納美食中心</h3><p>集合多元餐飲與度假娛樂體驗。</p><span class="more">點擊進入 →</span></div>
-    </a>
-    <a class="destination-card" href="grandworld-guide.html" style="text-decoration:none;color:inherit">
-      <div class="destination-image" style="background-image:url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=90")"></div>
-      <div class="destination-content"><span class="tag">攻略</span><h3>富國大世界攻略</h3><p>景點、表演時間與夜間行程一次整理。</p><span class="more">點擊進入 →</span></div>
-    </a>
-  </div>
-</div>
-</section>
-
-<section class="section" id="destinations">
-<div class="container">
-  <div class="section-title">
-    <small>TOP DESTINATIONS</small>
-    <h2>熱門景點</h2>
-    <p>依照北部、中部、南部整理富國島熱門景點，方便規劃每日行程。</p>
-  </div>
-
-  <div class="destination-grid">
-
-    <!-- 北部 -->
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">北部</span>
-        <h3>珍珠野生動物園</h3>
-        <p>大型開放式野生動物園，適合親子旅遊與喜愛動物的旅客。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">北部</span>
-        <h3>珍珠奇幻樂園</h3>
-        <p>富國島大型主題樂園，結合遊樂設施、水上樂園與海洋體驗。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">北部</span>
-        <h3>富國大世界</h3>
-        <p>充滿歐式街景、運河、水舞秀與夜間娛樂的熱門旅遊區。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">北部</span>
-        <h3>珍珠高爾夫球場</h3>
-        <p>度假島嶼中的高爾夫球場，適合安排休閒運動與度假行程。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-    <!-- 中部 -->
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">中部</span>
-        <h3>桑奈托日落海灘</h3>
-        <p>富國島熱門夕陽景點，適合欣賞海景、拍照與享受悠閒午後。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">中部</span>
-        <h3>陽東夜市</h3>
-        <p>富國島經典夜市，品嚐海鮮、越南小吃與各式街頭美食。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-    <!-- 南部 -->
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">南部</span>
-        <h3>海洋之吻</h3>
-        <p>結合海洋、燈光、音樂與大型多媒體演出的南部人氣景點。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">南部</span>
-        <h3>親吻橋</h3>
-        <p>富國島南部著名地標，適合欣賞海景、夕陽與拍攝旅遊照片。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-    <div class="destination-card">
-      <div class="destination-image" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85')"></div>
-      <div class="destination-content">
-        <span class="tag">南部</span>
-        <h3>太陽世界跨海纜車</h3>
-        <p>欣賞富國島南部海景的經典體驗，連接日落小鎮與香島。</p>
-        <a href="#" class="more">查看景點 →</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-</section>
 
 <section class="section feature">
-<div class="container"><div class="feature-grid">
-  <div class="feature-image"></div>
+<div class="container">
+<section class="section promo-section">
+  <div class="container">
+    <div class="promo-grid">
+      <a class="promo-card" href="corona.html">
+        <div class="promo-image" style="background-image:url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?auto=format&fit=crop&w=1200&q=90')"></div>
+        <div class="promo-body"><div class="promo-en">CORONA CASINO</div><h3>Corona 賭場</h3><p>越南首座合法國際賭場，頂級娛樂體驗</p><span>點擊進入 →</span></div>
+      </a>
+      <a class="promo-card" href="corona-food.html">
+        <div class="promo-image" style="background-image:url('corona-food-center.png')"></div>
+        <div class="promo-body"><div class="promo-en">CORONA FOOD CENTER</div><h3>科羅納美食中心</h3><p>多國美食匯聚，餐飲與休閒一次滿足</p><span>點擊進入 →</span></div>
+      </a>
+      <a class="promo-card" href="grandworld-guide.html">
+        <div class="promo-image" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=90')"></div>
+        <div class="promo-body"><div class="promo-en">GRAND WORLD GUIDE</div><h3>富國大世界攻略</h3><p>景點攻略、表演時間、交通與遊玩指南</p><span>點擊進入 →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
   <div class="feature-text">
     <small>PHU QUOC EXPERIENCE</small><h2>一座值得慢慢探索的島</h2>
     <p>富國島不只有美麗海灘，還有主題樂園、夜市、海鮮、美食、SPA、夕陽與豐富的島嶼生活。</p>
