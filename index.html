@@ -16,7 +16,7 @@ a{color:inherit}
 .navbar{position:fixed;inset:0 0 auto 0;height:78px;z-index:100;background:rgba(7,21,34,.97);border-bottom:1px solid rgba(217,181,106,.45);display:flex;align-items:center;justify-content:space-between;padding:0 5%;box-shadow:0 4px 22px rgba(0,0,0,.16)}
 .logo{color:#f1d28f;font-family:Georgia,"Times New Roman",serif;font-size:25px;font-weight:700;letter-spacing:4px;line-height:1}.logo span{display:block;color:#d9dfe5;font-family:Arial,sans-serif;font-size:10px;letter-spacing:4px;margin-top:7px}
 .nav-links{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}.nav-links a{color:#fff;text-decoration:none;font-weight:600;letter-spacing:.5px;transition:.2s}.nav-links a:hover{color:#e2bd70}
-.hero{min-height:570px;padding:145px 20px 85px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background-image:linear-gradient(90deg,rgba(7,21,34,.40),rgba(7,21,34,.12)),url("hero-bright.jpg");background-position:center;background-size:cover}
+.hero{min-height:570px;padding:145px 20px 85px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background-image:linear-gradient(90deg,rgba(7,21,34,.30),rgba(7,21,34,.10)),url("hero-luxury-clean.jpg");background-position:center;background-size:cover}
 .hero:after{content:"";position:absolute;left:8%;right:8%;bottom:28px;height:1px;background:linear-gradient(90deg,transparent,#d9b56a,transparent)}
 .hero-content{max-width:850px;position:relative;z-index:1}.hero-small{font-size:14px;letter-spacing:7px;color:#e1bd70;font-weight:600}.hero h1{font-family:"Noto Serif TC","Songti TC","Microsoft JhengHei",serif;font-size:72px;letter-spacing:8px;color:#f6d891;margin:18px 0 12px;text-shadow:0 3px 18px #0008}.hero p{font-size:20px;color:#fff;margin:0 0 28px}.hero-button{display:inline-block!important;text-decoration:none!important;background:linear-gradient(135deg,#e5c47b,#ae7e32)!important;color:#142333!important;padding:11px 30px!important;border-radius:28px!important;font-weight:800!important;box-shadow:0 8px 24px #0005!important;border:1px solid #f0d596!important}
 .section{padding:85px 0}.container{width:min(1180px,90%);margin:auto}
@@ -33,19 +33,39 @@ footer{background:var(--navy-deep);color:#d9dfe5;text-align:center;padding:50px 
 
 /* FINAL LUXURY HOMEPAGE OVERRIDES */
 body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-serif;background:#f7f2e8;color:#183047}
-.hero{background-image:linear-gradient(90deg,rgba(4,19,33,.18),rgba(4,19,33,.08)),url('hero-bright.jpg');background-position:center;background-size:cover}
+.hero{background-image:linear-gradient(90deg,rgba(4,19,33,.12),rgba(4,19,33,.05)),url('hero-cover-reference.jpg');background-position:center;background-size:cover}
 .hero h1{font-family:"Noto Serif TC","Songti TC","Microsoft JhengHei",serif}
-.promo-section{padding-top:30px;padding-bottom:75px}
-.promo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.promo-card{display:block;text-decoration:none;color:#fff;background:#071b2c;border:1px solid #c79b52;border-radius:18px;overflow:hidden;box-shadow:0 14px 32px rgba(7,27,44,.18);transition:.25s}
-.promo-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(7,27,44,.25)}
-.promo-image{height:190px;background-position:center;background-size:cover}
-.promo-body{padding:22px 24px 25px;text-align:center;background:linear-gradient(160deg,#0a2135,#071522)}
-.promo-en{font-size:12px;letter-spacing:2px;color:#d8b56b}
-.promo-body h3{font-family:"Noto Serif TC","Microsoft JhengHei",serif;font-size:28px;color:#f0d18e;margin:5px 0}
-.promo-body p{font-size:14px;color:#e1e6eb;margin:5px 0 14px}
-.promo-body span{display:inline-block;border:1px solid #d8b56b;border-radius:24px;padding:6px 22px;color:#f0d18e;font-weight:700}
-@media(max-width:850px){.promo-grid{grid-template-columns:1fr}.promo-image{height:220px}}
+
+
+/* USER REQUEST FINAL STRUCTURE */
+.region-grid{margin-top:10px}
+.region-card{min-height:330px}
+.region-content b{display:inline-block;margin-top:10px}
+.feature{background:#efe9dd}
+.feature-image{background-position:center;background-size:cover}
+@media(max-width:900px){.region-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}}
+
+/* COVER IMAGE: polished reference composition */
+.hero{background-image:url("hero-luxury-clean.jpg") !important;background-position:center;background-size:cover;min-height:570px}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,18,30,.08),rgba(4,18,30,.02));z-index:0}
+.hero-content{z-index:2}
+.hero-content .hero-small,.hero-content h1,.hero-content p{display:none}
+.hero-button{margin-top:300px}
+
+/* Final homepage polish */
+.hero{min-height:610px;background-position:center center!important}
+.special-entry-section{background:#f2ecdf;padding-top:75px;padding-bottom:85px}
+.special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.special-card{display:block;text-decoration:none;background:#071b2c;border:1px solid rgba(184,137,61,.55);border-radius:18px;overflow:hidden;box-shadow:0 14px 32px rgba(7,21,34,.16);transition:.28s}
+.special-card:hover{transform:translateY(-6px);box-shadow:0 20px 42px rgba(7,21,34,.24)}
+.special-image{height:205px;background-size:cover;background-position:center}
+.special-body{padding:22px 24px 26px;text-align:center;background:linear-gradient(150deg,#0a2135,#071522)}
+.special-body>span{font-size:11px;letter-spacing:2.5px;color:#e2bd70;font-weight:800}
+.special-body h3{font-family:"Noto Serif TC","Microsoft JhengHei",serif;font-size:28px;color:#f1d18d;margin:7px 0 8px}
+.special-body p{color:#e3e8ec;font-size:14px;margin:0 0 14px}
+.special-body b{display:inline-block;color:#f1d18d;border:1px solid #c79b52;border-radius:24px;padding:6px 20px;font-size:14px}
+@media(max-width:850px){.special-grid{grid-template-columns:1fr}.special-image{height:230px}}
+
 </style>
 </head>
 <body>
@@ -54,7 +74,6 @@ body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-se
   <div class="logo">PHU QUOC<span>TRAVEL GUIDE</span></div>
   <ul class="nav-links">
     <li><a href="#regions">探索富國島</a></li>
-    <li><a href="#destinations">熱門景點</a></li>
     <li><a href="#food">美食</a></li>
     <li><a href="#hotel">住宿</a></li>
     <li><a href="#info">旅遊資訊</a></li>
@@ -70,35 +89,101 @@ body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-se
   </div>
 </header>
 
-
-
-<section class="section feature">
-<div class="container">
-<section class="section promo-section">
+<section class="section" id="regions">
   <div class="container">
-    <div class="promo-grid">
-      <a class="promo-card" href="corona.html">
-        <div class="promo-image" style="background-image:url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?auto=format&fit=crop&w=1200&q=90')"></div>
-        <div class="promo-body"><div class="promo-en">CORONA CASINO</div><h3>Corona 賭場</h3><p>越南首座合法國際賭場，頂級娛樂體驗</p><span>點擊進入 →</span></div>
+    <div class="section-title">
+      <small>EXPLORE PHU QUOC</small>
+      <h2>探索富國島</h2>
+      <p>依照北部、中部、南部，安排最適合你的富國島旅程。</p>
+    </div>
+    <div class="region-grid">
+      <a class="region-card" href="north.html" style="background-image:url('hero-cover-final.jpg')">
+        <div class="region-content">
+          <span>NORTH PHU QUOC</span>
+          <h3>北部</h3>
+          <p>珍珠野生動物園・珍珠奇幻樂園・富國大世界・珍珠高爾夫球場</p>
+          <b>點擊進入北部 →</b>
+        </div>
       </a>
-      <a class="promo-card" href="corona-food.html">
-        <div class="promo-image" style="background-image:url('corona-food-center.png')"></div>
-        <div class="promo-body"><div class="promo-en">CORONA FOOD CENTER</div><h3>科羅納美食中心</h3><p>多國美食匯聚，餐飲與休閒一次滿足</p><span>點擊進入 →</span></div>
+      <a class="region-card" href="central.html" style="background-image:url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=90')">
+        <div class="region-content">
+          <span>CENTRAL PHU QUOC</span>
+          <h3>中部</h3>
+          <p>桑奈托日落海灘・陽東夜市</p>
+          <b>點擊進入中部 →</b>
+        </div>
       </a>
-      <a class="promo-card" href="grandworld-guide.html">
-        <div class="promo-image" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=90')"></div>
-        <div class="promo-body"><div class="promo-en">GRAND WORLD GUIDE</div><h3>富國大世界攻略</h3><p>景點攻略、表演時間、交通與遊玩指南</p><span>點擊進入 →</span></div>
+      <a class="region-card" href="south.html" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=90')">
+        <div class="region-content">
+          <span>SOUTH PHU QUOC</span>
+          <h3>南部</h3>
+          <p>海洋之吻（Kiss of the Sea）・親吻橋・太陽世界跨海纜車</p>
+          <b>點擊進入南部 →</b>
+        </div>
       </a>
     </div>
   </div>
 </section>
 
-  <div class="feature-text">
-    <small>PHU QUOC EXPERIENCE</small><h2>一座值得慢慢探索的島</h2>
-    <p>富國島不只有美麗海灘，還有主題樂園、夜市、海鮮、美食、SPA、夕陽與豐富的島嶼生活。</p>
-    <ul class="feature-list"><li>北部：親子景點與娛樂</li><li>中部：夜市與在地美食</li><li>南部：夕陽與海上體驗</li><li>島上：SPA、按摩與購物</li></ul>
+<section class="section special-entry-section" id="special-entries">
+  <div class="container">
+    <div class="section-title">
+      <small>FEATURED EXPERIENCES</small>
+      <h2>三個特色入口</h2>
+      <p>探索富國島住宿之外的娛樂、美食與旅遊攻略。</p>
+    </div>
+    <div class="special-grid">
+      <a class="special-card" href="corona.html">
+        <div class="special-image" style="background-image:url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?auto=format&fit=crop&w=1200&q=90')"></div>
+        <div class="special-body">
+          <span>CORONA CASINO</span>
+          <h3>Corona 賭場</h3>
+          <p>點擊進入影片＋完整介紹</p>
+          <b>進入 Corona →</b>
+        </div>
+      </a>
+      <a class="special-card" href="corona-food.html">
+        <div class="special-image" style="background-image:url('corona-food-center.png')"></div>
+        <div class="special-body">
+          <span>CORONA FOOD CENTER</span>
+          <h3>科羅納美食中心</h3>
+          <p>餐飲、休閒與多國美食一次探索</p>
+          <b>查看美食中心 →</b>
+        </div>
+      </a>
+      <a class="special-card" href="grandworld-guide.html">
+        <div class="special-image" style="background-image:url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=90')"></div>
+        <div class="special-body">
+          <span>GRAND WORLD GUIDE</span>
+          <h3>富國大世界攻略</h3>
+          <p>景點、表演時間與遊玩資訊</p>
+          <b>查看攻略 →</b>
+        </div>
+      </a>
+    </div>
   </div>
-</div></div>
+</section>
+
+
+
+
+<section class="section feature" id="feature">
+  <div class="container">
+    <div class="feature-grid">
+      <div class="feature-image" style="background-image:url('feature-island.jpg')"></div>
+      <div class="feature-text">
+        <small>PHU QUOC EXPERIENCE</small>
+        <h2>一座值得慢慢探索的島</h2>
+        <p>富國島不只有美麗海灘，還有主題樂園、夜市、海鮮、美食、SPA、夕陽與豐富的島嶼生活。</p>
+        <ul class="feature-list">
+          <li>北部：親子景點與娛樂</li>
+          <li>中部：夜市與在地美食</li>
+          <li>南部：夕陽與海上體驗</li>
+          <li>島上：SPA、按摩與購物</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Sun Bavaria GastroPub image supplied by user -->
@@ -219,18 +304,6 @@ body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-se
       </div>
     </div>
 
-  </div>
-</div>
-</section>
-
-<section class="section casino-info" id="casino-info">
-<div class="container">
-  <div class="section-title"><small>ENTERTAINMENT</small><h2>🎰 Corona 賭場</h2><p>富國島北部的娛樂選項，可搭配富國大世界等北部行程安排。</p></div>
-  <div class="info-grid">
-    <div class="info-card"><div class="icon">🎰</div><h3>Corona Casino</h3><p>富國島大型綜合娛樂設施。</p></div>
-    <div class="info-card"><div class="icon">📍</div><h3>北部區域</h3><p>可搭配富國大世界、珍珠野生動物園等景點安排。</p></div>
-    <div class="info-card"><div class="icon">🌙</div><h3>夜間娛樂</h3><p>可作為北部晚間行程的其中一個選項。</p></div>
-    <div class="info-card"><div class="icon">ℹ️</div><h3>入場資訊</h3><p>實際入場資格與規定，請依現場及官方最新公告為準。</p></div>
   </div>
 </div>
 </section>
