@@ -16,7 +16,7 @@ a{color:inherit}
 .navbar{position:fixed;inset:0 0 auto 0;height:78px;z-index:100;background:rgba(7,21,34,.97);border-bottom:1px solid rgba(217,181,106,.45);display:flex;align-items:center;justify-content:space-between;padding:0 5%;box-shadow:0 4px 22px rgba(0,0,0,.16)}
 .logo{color:#f1d28f;font-family:Georgia,"Times New Roman",serif;font-size:25px;font-weight:700;letter-spacing:4px;line-height:1}.logo span{display:block;color:#d9dfe5;font-family:Arial,sans-serif;font-size:10px;letter-spacing:4px;margin-top:7px}
 .nav-links{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}.nav-links a{color:#fff;text-decoration:none;font-weight:600;letter-spacing:.5px;transition:.2s}.nav-links a:hover{color:#e2bd70}
-.hero{min-height:570px;padding:145px 20px 85px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background-image:linear-gradient(90deg,rgba(7,21,34,.30),rgba(7,21,34,.10)),url("hero-luxury-clean.jpg");background-position:center;background-size:cover}
+.hero{min-height:570px;padding:145px 20px 85px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background-image:linear-gradient(90deg,rgba(7,21,34,.18),rgba(7,21,34,.06)),url("hero-luxury-clean.jpg");background-position:center;background-size:cover}
 .hero:after{content:"";position:absolute;left:8%;right:8%;bottom:28px;height:1px;background:linear-gradient(90deg,transparent,#d9b56a,transparent)}
 .hero-content{max-width:850px;position:relative;z-index:1}.hero-small{font-size:14px;letter-spacing:7px;color:#e1bd70;font-weight:600}.hero h1{font-family:"Noto Serif TC","Songti TC","Microsoft JhengHei",serif;font-size:72px;letter-spacing:8px;color:#f6d891;margin:18px 0 12px;text-shadow:0 3px 18px #0008}.hero p{font-size:20px;color:#fff;margin:0 0 28px}.hero-button{display:inline-block!important;text-decoration:none!important;background:linear-gradient(135deg,#e5c47b,#ae7e32)!important;color:#142333!important;padding:11px 30px!important;border-radius:28px!important;font-weight:800!important;box-shadow:0 8px 24px #0005!important;border:1px solid #f0d596!important}
 .section{padding:85px 0}.container{width:min(1180px,90%);margin:auto}
@@ -65,6 +65,21 @@ body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-se
 .special-body p{color:#e3e8ec;font-size:14px;margin:0 0 14px}
 .special-body b{display:inline-block;color:#f1d18d;border:1px solid #c79b52;border-radius:24px;padding:6px 20px;font-size:14px}
 @media(max-width:850px){.special-grid{grid-template-columns:1fr}.special-image{height:230px}}
+
+
+/* RESTORED HOTEL PHOTOS */
+.hotel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.hotel-card{background:#fff;border:1px solid #e5dccd;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(20,36,50,.08);transition:.25s}
+.hotel-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(20,36,50,.14)}
+.hotel-card-image{height:260px;background-size:cover;background-position:center;display:block}
+.hotel-card-content{padding:23px}
+.hotel-card-content small{color:#b9893f;letter-spacing:2px;font-weight:800}
+.hotel-card-content h3{font-family:"Noto Serif TC","Microsoft JhengHei",serif;font-size:25px;color:#09243b;margin:8px 0 3px}
+.hotel-card-content p{color:#687681;margin:0 0 12px}
+.hotel-details{line-height:1.9;color:#52616c;font-size:14px;margin-bottom:16px}
+.hotel-button{display:inline-block;text-decoration:none;color:#09243b;border:1px solid #c79b52;border-radius:24px;padding:7px 18px;font-weight:800}
+@media(max-width:900px){.hotel-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.hotel-grid{grid-template-columns:1fr}}
 
 </style>
 </head>
@@ -257,7 +272,7 @@ body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-se
   <div class="hotel-grid">
 
     <div class="hotel-card">
-      <div class="hotel-card-image"
+      <div class="hotel-card-image" role="img"
            style="background-image:url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85')"></div>
       <div class="hotel-card-content">
         <small>WYNDHAM GRAND</small>
@@ -273,7 +288,7 @@ body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-se
     </div>
 
     <div class="hotel-card">
-      <div class="hotel-card-image"
+      <div class="hotel-card-image" role="img"
            style="background-image:url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85')"></div>
       <div class="hotel-card-content">
         <small>RADISSON BLU</small>
@@ -289,7 +304,7 @@ body{font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",Arial,sans-se
     </div>
 
     <div class="hotel-card">
-      <div class="hotel-card-image"
+      <div class="hotel-card-image" role="img"
            style="background-image:url('https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1200&q=85')"></div>
       <div class="hotel-card-content">
         <small>CROWNE PLAZA</small>
