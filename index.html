@@ -30,6 +30,21 @@ a{color:inherit}
 footer{background:var(--navy-deep);color:#d9dfe5;text-align:center;padding:50px 20px;border-top:1px solid #b8893d66}.foot{font-family:Georgia,serif;color:#e4c47b;font-size:27px;letter-spacing:4px}
 @media(max-width:900px){.nav-links{gap:12px;font-size:13px}.region-grid,.destination-grid,.restaurant-grid,.hotel-grid{grid-template-columns:1fr 1fr}.feature-grid{grid-template-columns:1fr}.hero h1{font-size:52px}}
 @media(max-width:600px){.navbar{height:68px}.nav-links{display:none}.hero{min-height:500px;padding-top:120px}.hero h1{font-size:44px;letter-spacing:4px}.section{padding:60px 0}.region-grid,.destination-grid,.restaurant-grid,.hotel-grid,.info-grid{grid-template-columns:1fr}.casino-link{flex-wrap:wrap}.casino-desc{margin-left:0;width:100%}}
+
+.north-recommend{background:#f1eadf;border-top:1px solid #e4d8c5;border-bottom:1px solid #e4d8c5}
+.north-recommend .recommend-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.recommend-card{display:block;background:#fffdf9;border:1px solid #e4dacb;border-radius:16px;overflow:hidden;text-decoration:none;box-shadow:0 9px 24px rgba(16,37,59,.10);transition:.25s}
+.recommend-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(16,37,59,.16);border-color:#b8893d}
+.recommend-image{height:190px;background-size:cover;background-position:center}
+.recommend-body{padding:17px 18px 19px}
+.recommend-body small{color:#b8893d;letter-spacing:2px;font-weight:800;font-size:11px}
+.recommend-body h3{font-family:"Noto Serif TC","Microsoft JhengHei",serif;color:#10253b;font-size:21px;margin:4px 0 5px}
+.recommend-body p{color:#66727d;font-size:13px;line-height:1.6;margin:0}
+.recommend-enter{display:inline-block;margin-top:9px;color:#b8893d;font-size:13px;font-weight:800}
+.recommend-casino{grid-column:1/-1;display:flex;align-items:center;min-height:125px;background:linear-gradient(105deg,#071522,#18344b);border:1px solid #b8893d;border-radius:16px;padding:20px 28px;box-shadow:0 12px 28px rgba(7,21,34,.18)}
+.recommend-casino .recommend-body{padding:0}.recommend-casino h3{color:#f0ce84}.recommend-casino p{color:#d9e0e6}.recommend-casino .recommend-enter{color:#f0ce84;margin-left:auto}.casino-mark{font-size:34px;margin-right:20px}
+@media(max-width:900px){.north-recommend .recommend-grid{grid-template-columns:1fr 1fr}.recommend-casino{grid-column:1/-1}}
+@media(max-width:600px){.north-recommend .recommend-grid{grid-template-columns:1fr}.recommend-casino{grid-column:auto}.recommend-casino .recommend-enter{margin-left:0}}
 </style>
 </head>
 <body>
@@ -75,6 +90,39 @@ footer{background:var(--navy-deep);color:#d9dfe5;text-align:center;padding:50px 
   </div>
 </div>
 </section>
+<section class="section north-recommend" id="north-recommend">
+<div class="container">
+  <div class="section-title">
+    <small>NORTH PHU QUOC</small>
+    <h2>北部熱門推薦</h2>
+    <p>精選北部四大景點與 Corona 娛樂選項。</p>
+  </div>
+  <div class="recommend-grid">
+    <a class="recommend-card" href="zoo.html">
+      <div class="recommend-image" style="background-image:url('https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1200&q=85')"></div>
+      <div class="recommend-body"><small>01 · NORTH</small><h3>珍珠野生動物園</h3><p>開放式野生動物園，親子與動物互動熱門景點。</p><span class="recommend-enter">查看詳細介紹 →</span></div>
+    </a>
+    <a class="recommend-card" href="wonderland.html">
+      <div class="recommend-image" style="background-image:url('https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?auto=format&fit=crop&w=1200&q=85')"></div>
+      <div class="recommend-body"><small>02 · NORTH</small><h3>珍珠奇幻樂園</h3><p>陸上、水上遊樂設施與巨型海龜水族館。</p><span class="recommend-enter">查看詳細介紹 →</span></div>
+    </a>
+    <a class="recommend-card" href="grandworld.html">
+      <div class="recommend-image" style="background-image:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=85')"></div>
+      <div class="recommend-body"><small>03 · NORTH</small><h3>富國大世界</h3><p>24 小時不夜城、歐風建築與夜間水舞秀。</p><span class="recommend-enter">查看詳細介紹 →</span></div>
+    </a>
+    <a class="recommend-card" href="golf.html">
+      <div class="recommend-image" style="background-image:url('https://images.unsplash.com/photo-1587174486073-ae5e8cff23aa?auto=format&fit=crop&w=1200&q=85')"></div>
+      <div class="recommend-body"><small>04 · NORTH</small><h3>珍珠高爾夫球場</h3><p>熱帶森林與海景融合的國際級錦標賽球場。</p><span class="recommend-enter">查看詳細介紹 →</span></div>
+    </a>
+    <a class="recommend-casino" href="corona.html">
+      <div class="casino-mark">♠</div>
+      <div class="recommend-body"><small>ENTERTAINMENT · NORTH</small><h3>Corona 賭場</h3><p>富國島北部大型綜合娛樂設施，點擊進入查看完整介紹與影片。</p></div>
+      <span class="recommend-enter">進入 Corona →</span>
+    </a>
+  </div>
+</div>
+</section>
+
 
 <section class="section" id="destinations">
 <div class="container">
