@@ -1,0 +1,161 @@
+<!-- 旅遊資訊｜四格高級版 -->
+<section class="travel-info-section">
+  <div class="travel-info-header">
+    <div class="travel-info-eyebrow">TRAVEL INFORMATION</div>
+    <h2>旅遊資訊</h2>
+    <div class="travel-info-ornament"><span>◇</span></div>
+    <p>第一次到富國島，先了解這些實用資訊。</p>
+  </div>
+
+  <div class="travel-info-grid">
+    <a class="travel-info-card" href="#transport">
+      <div class="travel-info-icon">✈</div>
+      <h3>交通</h3>
+      <div class="travel-info-line"></div>
+      <p>機場、接送、租車與<br>島上交通。</p>
+    </a>
+
+    <a class="travel-info-card" href="#currency">
+      <div class="travel-info-icon">＄</div>
+      <h3>貨幣</h3>
+      <div class="travel-info-line"></div>
+      <p>越南盾 VND 與常用<br>貨幣換算。</p>
+    </a>
+
+    <a class="travel-info-card" href="#timezone">
+      <div class="travel-info-icon">◷</div>
+      <h3>時差</h3>
+      <div class="travel-info-line"></div>
+      <p>富國島時間比香港／<br>中國／台灣慢 1 小時。</p>
+    </a>
+
+    <a class="travel-info-card" href="#useful-info">
+      <div class="travel-info-icon">▤</div>
+      <h3>實用資訊</h3>
+      <div class="travel-info-line"></div>
+      <p>SIM 卡、網路、購物與<br>旅遊注意事項。</p>
+    </a>
+  </div>
+</section>
+
+<style>
+.travel-info-section{
+  background:#f7f3ea;
+  padding:92px 42px 105px;
+  color:#102b49;
+}
+.travel-info-header{
+  text-align:center;
+  max-width:1000px;
+  margin:0 auto 68px;
+}
+.travel-info-eyebrow{
+  color:#b8893d;
+  font-size:15px;
+  letter-spacing:6px;
+  margin-bottom:22px;
+}
+.travel-info-header h2{
+  margin:0;
+  font-family:"Noto Serif TC","Songti TC","PMingLiU","Microsoft JhengHei",serif;
+  font-size:58px;
+  font-weight:700;
+  letter-spacing:7px;
+  line-height:1.25;
+}
+.travel-info-ornament{
+  width:270px;
+  height:1px;
+  background:#c99845;
+  margin:25px auto 32px;
+  position:relative;
+}
+.travel-info-ornament span{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-54%);
+  background:#f7f3ea;
+  padding:0 12px;
+  color:#c99845;
+  font-size:22px;
+}
+.travel-info-header p{
+  margin:0;
+  color:#243b55;
+  font-size:20px;
+  letter-spacing:1px;
+}
+.travel-info-grid{
+  max-width:1435px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:28px;
+}
+.travel-info-card{
+  min-height:470px;
+  background:#fff;
+  border:1px solid #e6ddce;
+  border-radius:22px;
+  padding:48px 28px 44px;
+  text-align:center;
+  text-decoration:none;
+  color:#102b49;
+  box-shadow:0 12px 30px rgba(45,38,25,.10);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.travel-info-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 38px rgba(45,38,25,.14);
+}
+.travel-info-icon{
+  width:136px;
+  height:136px;
+  border-radius:50%;
+  background:#fbf7ef;
+  border:1px solid #eadfce;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#c58f2f;
+  font-size:58px;
+  font-family:Georgia,serif;
+  margin-bottom:30px;
+}
+.travel-info-card h3{
+  margin:0;
+  font-family:"Noto Serif TC","Songti TC","PMingLiU","Microsoft JhengHei",serif;
+  font-size:35px;
+  font-weight:700;
+  letter-spacing:3px;
+}
+.travel-info-line{
+  width:44px;
+  height:3px;
+  border-radius:3px;
+  background:#c99845;
+  margin:27px 0 31px;
+}
+.travel-info-card p{
+  margin:0;
+  color:#26384d;
+  font-size:21px;
+  line-height:2;
+  letter-spacing:1px;
+}
+@media(max-width:850px){
+  .travel-info-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  .travel-info-section{padding:60px 18px 70px}
+  .travel-info-header h2{font-size:42px}
+  .travel-info-header p{font-size:17px}
+  .travel-info-grid{grid-template-columns:1fr}
+  .travel-info-card{min-height:390px}
+}
+</style>
