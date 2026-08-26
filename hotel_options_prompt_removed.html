@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>富國島溫德姆至尊飯店｜三個入口更新</title>
+
+<style>
+/* Wyndham Grand Phu Quoc — 三個入口方框 */
+.hotel-options{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:32px;
+}
+.hotel-option{
+  min-height:210px;
+  padding:32px 24px;
+  border:1px solid #e5cfaa;
+  border-radius:22px;
+  background:#fffdf8;
+  box-shadow:0 12px 30px rgba(18,39,62,.08);
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.hotel-option .icon{
+  width:58px;height:58px;
+  border:1px solid #ead7b8;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#c89432;
+  font-size:25px;
+  margin-bottom:16px;
+}
+.hotel-option h3{
+  margin:0;
+  color:#08213b;
+  font-size:28px;
+  letter-spacing:.08em;
+}
+.hotel-option .divider{
+  width:44px;height:2px;
+  background:#c89432;
+  margin:16px 0 20px;
+}
+.hotel-option a{
+  color:#c89432;
+  text-decoration:none;
+  font-weight:600;
+}
+@media(max-width:800px){
+  .hotel-options{grid-template-columns:1fr;}
+}
+</style>
+
+</head>
+<body>
+<section class="hotel-options">
+  <div class="hotel-option">
+    <div class="icon">⌂</div>
+    <h3>房型</h3>
+    <div class="divider"></div>
+    <a href="rooms.html">點擊進入 →</a>
+  </div>
+
+  <div class="hotel-option">
+    <div class="icon">✦</div>
+    <h3>設施</h3>
+    <div class="divider"></div>
+    <a href="facilities.html">點擊進入 →</a>
+  </div>
+
+  <div class="hotel-option">
+    <div class="icon">♜</div>
+    <h3>餐廳</h3>
+    <div class="divider"></div>
+    <a href="restaurants.html">點擊進入 →</a>
+  </div>
+</section>
+</body>
+</html>
